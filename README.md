@@ -1,4 +1,4 @@
-## MY_ANIMAL APP
+## ZooZone App
 
 ### Description
   My Animal app is a web application designed to provide users with an interactive platform to explore and learn about various animals from around the world.
