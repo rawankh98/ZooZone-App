@@ -1,0 +1,8 @@
+.title {
+    color:  #0D6EFD;
+}
+.card{
+    border-radius: 5%;
+    box-shadow: 5px rgb(11, 44, 45);
+    background-color: #f1f1f2;;
+}

@@ -1,25 +1,31 @@
-import './App.css';
-import { useState, useEffect } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import NavBar from "./components/Nav/NavBar";
+import Body from "./components/Body/Body";
+import AboutUs from "./components/Aboutus/AboutUs";
+
 
 function App() {
-  const [data, setData] = useState([])
-  async function getAllData(){
-    const url = `https://freetestapi.com/api/v1/animals`
-    const response = await fetch(url);
-    const animals = await response.json();
-    setData(response.data);
-    console.log(response);
-    console.log(animals);
-  }
-  useEffect(()=>{
-    getAllData()
-  },[])
-  console.log(data);
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <NavBar />,
+    },
+    {
+      path: "/animals",
+      element: <Body />,
+    },
+    {
+      path: "/about-us",
+      element: <AboutUs />,
+    },
+  ]);
 
   return (
-    <div className="App">
-      helllllllllllllllllllo
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

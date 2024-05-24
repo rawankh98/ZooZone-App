@@ -1,0 +1,13 @@
+ .nav{
+    background-color: #0D6EFD;
+    height: 100px;
+    text-decoration: none;
+    }
+
+    .dev{
+    display: flex;
+    flex-direction: "row";
+        margin-left: 115px;
+    }
+
+
