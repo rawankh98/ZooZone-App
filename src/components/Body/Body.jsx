@@ -20,6 +20,7 @@ export default function Body() {
 
 
   useEffect(()=>{
+    console.log(REACT_APP_URL);
     axios.get(`${REACT_APP_URL}`).then((res) => {
       setAnimalData(res.data.rows);
   })},[])
